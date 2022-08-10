@@ -65,9 +65,9 @@ const getTheme = () => {
         hoverText: '#333',
       }
       break
-    case '#191a23':
+    case '#003670':
       theme.value = {
-        background: '#191a23',
+        background: '#003670',
         activeBackground: '#4D70FF',
         activeText: '#fff',
         normalText: '#fff',

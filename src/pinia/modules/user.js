@@ -16,7 +16,7 @@ export const useUserStore = defineStore('user', () => {
     authority: {},
     sideMode: 'dark',
     activeColor: '#4D70FF',
-    baseColor: '#fff'
+    baseColor: '#003670'
   })
   const token = ref(window.localStorage.getItem('token') || '')
   const setUserInfo = (val) => {
@@ -106,7 +106,7 @@ export const useUserStore = defineStore('user', () => {
   const mode = computed(() => userInfo.value.sideMode)
   const sideMode = computed(() => {
     if (userInfo.value.sideMode === 'dark') {
-      return '#191a23'
+      return '#003670'
     } else if (userInfo.value.sideMode === 'light') {
       return '#fff'
     } else {
@@ -114,8 +114,10 @@ export const useUserStore = defineStore('user', () => {
     }
   })
   const baseColor = computed(() => {
+    //字体颜色
     if (userInfo.value.sideMode === 'dark') {
       return '#fff'
+      // return '#003670'
     } else if (userInfo.value.sideMode === 'light') {
       return '#191a23'
     } else {
@@ -124,7 +126,7 @@ export const useUserStore = defineStore('user', () => {
   })
   const activeColor = computed(() => {
     if (userInfo.value.sideMode === 'dark' || userInfo.value.sideMode === 'light') {
-      return '#4D70FF'
+      return '#003670'
     }
     return userInfo.activeColor
   })

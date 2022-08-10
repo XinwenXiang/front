@@ -37,12 +37,13 @@
     >
       <Screenfull class="search-icon" :style="{cursor:'pointer'}" />
     </div>
-    <div
+    <!-- 注释链接跳转 -->
+    <!-- <div
       v-if="btnShow"
       class="user-box"
     >
       <div class="gvaIcon gvaIcon-customer-service" @click="toService"></div>
-    </div>
+    </div> -->
   </div>
 </template>
 
